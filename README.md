@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-=======
-# insincere-word-detection
->>>>>>> Stashed changes
-# insincere-question-detection
+# insincere-question-screening
 
 
 # Introduction 
