@@ -1,23 +1,16 @@
 # import packages
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 from numpy import random
 import nltk
 from nltk.corpus import stopwords 
 import string
 import os
-import time
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 from tqdm import tqdm
 import math
 from sklearn.model_selection import train_test_split
 from sklearn import metrics
 import keras
-from tensorflow.python.keras.models import Sequential, Model
-from tensorflow.python.keras.layers import Dense, Input, LSTM, Embedding, Dropout, Activation, CuDNNGRU, Conv1D, Bidirectional, GlobalMaxPool1D
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras import initializers, regularizers, constraints, optimizers, layers
@@ -33,7 +26,7 @@ stemmer = SnowballStemmer("english")
 
 def main():
   # read in data
-  train = pd.read_csv('train.csv',nrows = 50000)
+  train = pd.read_csv('train.csv')
   nltk.download('stopwords')
   eng_stopwords = set(stopwords.words('english'))
 
